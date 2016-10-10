@@ -19,7 +19,7 @@ Page({
   },
   //页面加载监听，页面准备好后执行===在此处获取newss数据
   onLoad: function (options) {
-    console.log('news===加载数据--'+options.type);
+    //console.log('news===加载数据--'+options.type);
     var self = this;
     this.getNews({page: self.data.page});
   },
@@ -70,6 +70,10 @@ Page({
           }, 300);
         }
       })
+  },
+  turnToTag:function(event){
+    console.log("newsjs="+event);
+    app.globalData.tagJS.turnToTag(event);
   },
   //下拉触发
   lower: function(e) {

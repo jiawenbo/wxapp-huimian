@@ -240,3 +240,23 @@ checkbox, radio{
 .section__ctn{
 
 }
+
+
+/**头部导航**/
+.top-bar {
+  height: 36px;
+  background: #444;
+  width:100%;
+  position: fixed;
+  top:0;
+  z-index:1;
+}
+.top-bar-item {
+  display:inline-block;
+  width: 20%;
+  color: #80bd01;
+  text-align: center;
+  line-height: 36px;
+  font-size: 14px;
+}
+/**头部导航**/

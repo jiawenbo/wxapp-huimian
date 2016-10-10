@@ -1,10 +1,13 @@
+<import src="/common/template/tag.wxml"/>
+
 <!--news.wxml-->
 <view class="page">
 
+    <!--<template is="commonTag"/>-->
+    <include src="/pages/tag/tag.wxml"/>
+    <!--<include src="/common/template/tag.wxml"/>-->
 
-    
     <view class="page__bd">
-
         <block wx:if="{{RecommendPic.length>0}}">
           <!-- 如果有轮播图显示-->
           <view class="section section_gap swiper">

@@ -65,3 +65,6 @@
   width:150rpx;
   height:100rpx;
 }
+.page__bd{
+  margin-top: 36px;
+}
