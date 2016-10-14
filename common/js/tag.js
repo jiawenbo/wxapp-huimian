@@ -1,8 +1,10 @@
 //common/tag.js
+
 function sayHello(name) {
   console.log('Hello ' + name + '!')
 }
 
+//头部导航条跳转
 function turnToTag(event) {
   var tagId = event.currentTarget.id;
   var tagUrl = '/pages/news/list/news';
@@ -17,11 +19,19 @@ function turnToTag(event) {
   }else if(tagId=='ballot'){
     tagUrl = '/pages/ballot/list/ballotlist';
   }
+  var app = getApp();
+  var currentPage = app.getCurrentPage();
+  var currentUrl =  "/"+currentPage.__route__;
+  if(tagUrl!=currentUrl){
+    wx.redirectTo({
+      url: tagUrl
+    })
+  }else{
+    console.log('不用跳转')
+  }
   
-  wx.redirectTo({
-    url: tagUrl
-  })
 }
+//对外暴露接口
 module.exports = {
   sayHello: sayHello,
   turnToTag:turnToTag

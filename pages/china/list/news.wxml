@@ -1,8 +1,7 @@
-<!--news.wxml-->
+<!--china.wxml-->
 <view class="page">
-
-
-    
+    <!--引入导航条-->
+    <include src="/pages/tag/tag.wxml"/>
     <view class="page__bd">
 
         <block wx:if="{{RecommendPic.length>0}}">

@@ -5,6 +5,8 @@
     "pages/news/info/news_info",
     "pages/radio/list/radiolist",
     "pages/radio/info/radioinfo",
+    "pages/china/list/news",
+    "pages/china/info/news_info",
     "pages/zhengzhou/list/zhengzhoulist",
     "pages/zhengzhou/info/zhengzhouinfo",
     "pages/ballot/list/ballotlist",
@@ -12,6 +14,7 @@
     "pages/ballot/toupiao/toupiao",
     "pages/ballot/canyu/canyu",
     "pages/ballot/xuanchuan/xuanchuan",
+    "test/scroll-view/scroll-view",
     "pages/index/index",
     "pages/logs/logs"
   ],
@@ -38,11 +41,6 @@
       "selectedIconPath": "image/record.png",
       "text": "直播"
     }, {
-      "pagePath": "pages/news/list/news",
-      "iconPath": "image/icon_API.png",
-      "selectedIconPath": "image/icon_API_HL.png",
-      "text": "中华"
-    }, {
       "pagePath": "pages/zhengzhou/list/zhengzhoulist",
       "iconPath": "image/icon_API.png",
       "selectedIconPath": "image/icon_API_HL.png",
@@ -52,6 +50,11 @@
       "iconPath": "image/icon_API.png",
       "selectedIconPath": "image/icon_API_HL.png",
       "text": "活动"
+    }, {
+      "pagePath": "test/scroll-view/scroll-view",
+      "iconPath": "image/icon_API.png",
+      "selectedIconPath": "image/icon_API_HL.png",
+      "text": "其他练习"
     }]
   },
   "networkTimeout": {

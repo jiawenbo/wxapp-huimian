@@ -8,12 +8,6 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
-
-
-page {
-  background-color: #fbf9fe;
-  height: 100%;
-}
 .container {
   display: flex;
   flex-direction: column;
@@ -240,10 +234,14 @@ checkbox, radio{
 .section__ctn{
 
 }
-
+/**页面距离上部距离**/
+.page__bd{
+  margin-top: 37px;
+}
 
 /**头部导航**/
 .top-bar {
+  white-space: nowrap;/**增加了可以滑动**/
   height: 36px;
   background: #444;
   width:100%;

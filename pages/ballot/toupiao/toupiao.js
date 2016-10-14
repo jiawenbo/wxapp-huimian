@@ -57,7 +57,7 @@ Page({
       data: {
         processID:'addVoteInfo',
         voteId:voteid,
-        userid:000
+        userid:'000'
       },
       header: {
           'Content-Type': 'application/json'

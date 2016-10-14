@@ -3,7 +3,7 @@
 var app = getApp()
 Page({
   data: {
-    motto: '新闻列表',        //title
+    motto: '中华列表',        //title
     hidden: false,            //加载提示
     page: 1,                  //当前页码
     RecommendPic:[],          //轮播图
@@ -44,7 +44,7 @@ Page({
            processID:'getNewsList',
            Page: data.page ,
            PageSize: '20',
-           Type:1
+           Type:3
         },
         header: {
             'Content-Type': 'application/json'
@@ -71,6 +71,10 @@ Page({
           }, 300);
         }
       })
+  },
+  turnToTag:function(event){
+    console.log("newsjs="+event);
+    app.globalData.tagJS.turnToTag(event);
   },
   //下拉触发
   lower: function(e) {

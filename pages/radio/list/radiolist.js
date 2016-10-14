@@ -65,6 +65,10 @@ Page({
         }
       })
   },
+  turnToTag:function(event){
+    console.log("newsjs="+event);
+    app.globalData.tagJS.turnToTag(event);
+  },
   //下拉触发
   lower: function(e) {
     var self = this;

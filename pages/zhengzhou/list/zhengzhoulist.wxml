@@ -1,5 +1,7 @@
 <!--zhengzhou.wxml-->
 <view class="page">
+    <!--引入导航条-->
+    <include src="/pages/tag/tag.wxml"/>
     <view class="page__bd">
         <view class="data-list">
           <block wx:for="{{zhengzhouList}}">
